@@ -1,0 +1,26 @@
+Suppose that we need some geometry code to calculate the perimeter of a rectangle given a height and widts.
+We can write a Perimeter(width float64, height float64) function, where float64 is for floating-point numbers like 123.45.
+
+New format string:
+t.Errorf("got %.2f want %.2f", got, want)
+-- The f is for our float64 and the .2 means print 2 decimal places.
+
+Go's structs are typed collections of fields. They're useful for grouping data together to form records.
+
+Example of a Struct in Go.
+// Person structs
+
+type person struct {
+    name string
+    age int
+}
+
+The below function creates a new person struct with the given name.
+
+func newPerson(name string) *person {
+    p := person {name: name}
+    p.age = 42
+    return &p
+}
+
+Structs are mutable.
